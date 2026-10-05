@@ -1,0 +1,38 @@
+{
+  "product": "Overseer terminal",
+  "version": "0.1.4",
+  "release_tag": "terminal-v0.1.4-preview.1",
+  "source_commit": "770bbb012909192a8dd345f7a737e133577f43b4",
+  "prepared_at_utc": "2026-10-05T18:28:24.352887+00:00",
+  "verification": {
+    "mac_arm64": "native CI build, 3 terminal unit tests, install/reinstall/uninstall, corruption rejection, standalone interactive start/type/quit passed",
+    "linux_x64": "Ubuntu 24.04 native CI build and same package tests plus standalone interactive smoke passed",
+    "windows_x64": "native CI build, 3 terminal unit tests and package installation tests passed; interactive acceptance not performed"
+  },
+  "excluded": {
+    "mac_intel": "Build failed: ONNX dependency has no prebuilt library for target"
+  },
+  "limitations": [
+    "Preview release with existing launch-readiness findings",
+    "Mac binaries are not Developer ID signed or notarized",
+    "Optional speech tools and models are separate installations",
+    "Cloud-provider acceptance is not part of this release verification"
+  ],
+  "artifacts": [
+    {
+      "name": "overseer-terminal-v0.1.4-aarch64-apple-darwin.tar.gz",
+      "sha256": "3db54387f8fbb4ac5fd88c6137a9c23b60a0807137036a84059948ffae0cb765",
+      "bytes": 19776087
+    },
+    {
+      "name": "overseer-terminal-v0.1.4-x86_64-pc-windows-msvc.zip",
+      "sha256": "3ba021ce0f74ab1a67ce315203dbddbb721e5ccb4182ce0e012e45e3de6a8c15",
+      "bytes": 27152854
+    },
+    {
+      "name": "overseer-terminal-v0.1.4-x86_64-unknown-linux-gnu.tar.gz",
+      "sha256": "7ababcf96b61a715d263f38ab78ab2a3d5f804aeed545f46d6a72f162d863b62",
+      "bytes": 29039510
+    }
+  ]
+}
